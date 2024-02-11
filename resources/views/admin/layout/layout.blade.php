@@ -22,11 +22,11 @@
     <img class="animation__wobble" src="{{ asset('admin/images/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
   </div>
 
-@include('layout.header')
+@include('admin.layout.header')
 
-@include('layout.sidebar')
+@include('admin.layout.sidebar')
   <!-- Main Sidebar Container -->
-@yield
+@yield('content')
 
 
 
@@ -37,7 +37,7 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  @include('layout.footer')
+  @include('admin.layout.footer')
 </div>
 <!-- ./wrapper -->
 
@@ -49,7 +49,7 @@
 <!-- overlayScrollbars -->
 <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset('admin/js.adminlte) }}"></script>
+<script src="{{ asset('admin/js/adminlte.js') }}"></script>
 
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->
