@@ -22,6 +22,7 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->group(function
     Route::match(['get','post'],'login','adminController@login');
     Route::group(['middleware'=>['admin']],function(){
      Route::get('dashboard','adminController@dashboard');
+     Route::get('logout','adminController@logout');
     });
    
 });
